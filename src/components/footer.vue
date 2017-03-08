@@ -1,6 +1,10 @@
 <template>
     <div class="footer">
-        <router-link class="footerNav" to="/home" tag='div'>Home</router-link>
+        <router-link class="footerNav" to="/home" tag='div'>
+          <i class="el-icon-delete homeColor"></i>
+
+          Home
+        </router-link>
         <router-link class="footerNav" to="/about" tag='div'>About</router-link>
         <router-link class="footerNav" to="/user" tag='div'>User</router-link>
     </div>
@@ -31,5 +35,6 @@
       text-align: center;
       padding:10px 0;
     }
+    .router-link-active .homeColor{color:red;}
   }
 </style>
