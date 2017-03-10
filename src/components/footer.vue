@@ -1,18 +1,24 @@
 <template>
     <div class="footer">
         <router-link class="footerNav" to="/home" tag='div'>
-          <i class="el-icon-delete homeColor"></i>
-
-          Home
+          <i class="icon-home"></i>
+          <span>主页</span>
         </router-link>
-        <router-link class="footerNav" to="/about" tag='div'>About</router-link>
-        <router-link class="footerNav" to="/user" tag='div'>User</router-link>
+        <router-link class="footerNav" to="/about" tag='div'>
+          <i class="icon-comment"></i>
+          <span>聊天</span>
+        </router-link>
+
+        <router-link class="footerNav" to="/user" tag='div'>
+          <i class="icon-user homeColor"></i>
+          <span>我</span>
+        </router-link>
     </div>
 </template>
 
 <script>
     export default {
-      
+
     }
 
 </script>
@@ -28,8 +34,18 @@
     .footerNav{
       flex: 1;
       text-align: center;
-      padding:10px 0;
+      padding:5px 0;
+      >i{
+        font-size: 23px;
+      }
+      >span{
+        display: block;
+        font-size: 12px;
+        margin-top: 5px;
+      }
     }
-    .router-link-active .homeColor{color:red;}
+    .router-link-active{
+      i,span{color:red;}
+    }
   }
 </style>
