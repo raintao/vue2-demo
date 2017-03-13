@@ -1,10 +1,19 @@
 import Vue from 'vue'
 import router from './router'
 import App from './App.vue'
-import Element from 'element-ui'
-import 'element-ui/lib/theme-default/index.css'
-import './style/font-awesome.min.css'
-Vue.use(Element)
+import Vuex from 'vuex'
+
+import 	VueResourse from 'vue-resource'
+Vue.use(VueResourse)
+
+import './static/css/neat-min.css'
+import './static/css/iconfont.css'
+
+import MintUI from 'mint-ui'
+import 'mint-ui/lib/style.css'
+Vue.use(MintUI)
+
+
 new Vue({
     el: "#app",
     router,

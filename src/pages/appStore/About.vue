@@ -6,12 +6,12 @@
 </template>
 
 <script>
-    import FooterNav from '../components/footer'
+    import FooterNav from '../../components/appStore/footer'
     export default {
-        name: "Friend",
+        name: "About",
         data() {
             return {
-                msg: "hello friends"
+                msg: "hello About"
             }
         },
         components:{FooterNav}
