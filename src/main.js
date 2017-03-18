@@ -8,6 +8,7 @@ import './style/font-awesome.min.css'
 
 Vue.use(Element)
 
+
 new Vue({
     el: "#app",
     router,
