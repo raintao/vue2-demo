@@ -14,7 +14,7 @@ Vue.use(Router)
 const routes = [{
   path:'/',component:App,
   children:[
-    { path: "",redirect:"/home" },
+    { path: "",redirect:"/home/child2" },
     {
       path: "/home",component: Home,
       children:[

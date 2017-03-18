@@ -13,10 +13,18 @@
               </el-menu>
             </el-col>
         </el-row>
+        <br>
+        <button type="button" name="button" @click="addIncrement">
+          点击store,count加一
+        </button>
+        <p>{{count}}</p>
         <ul class="routeChild">
           <li><router-link to="/home/child1" class="">子路由1</router-link></li>
           <li><router-link to="/home/child2" class="">子路由2</router-link></li>
         </ul>
+        <button type="button" name="button" @click="addIncrement">
+          点击store,count加一
+        </button>
         <router-view></router-view>
         <footer-nav></footer-nav>
     </div>
@@ -24,15 +32,17 @@
 
 <script>
     import FooterNav from '../components/footer'
+    import {mapState,mapActions} from 'vuex'
     export default {
         name: "Home",
         data() {
             return {
                 msg: "hello Home"
-
             }
         },
-        components:{FooterNav}
+        computed:mapState(['count']),
+        components:{FooterNav},
+        methods:mapActions(['addIncrement'])
     }
 
 </script>
