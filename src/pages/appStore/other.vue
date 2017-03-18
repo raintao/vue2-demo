@@ -12,7 +12,7 @@
 <script>
    import router from '../router'
    import {mapState,mapActions} from 'vuex'
-    export default {
+   export default {
         name: "Other",
         data() {
             return {
