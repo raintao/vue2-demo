@@ -38,6 +38,7 @@
         data() {
             return {
                 msg: "hello Home"
+                
             }
         },
         computed:mapState(['count']),
