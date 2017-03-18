@@ -6,9 +6,12 @@
         </router-link>
         <router-link class="footerNav" to="/about" tag='div'>
           <i class="icon-comment"></i>
-          <span>聊天</span>
+          <span>消息</span>
         </router-link>
-
+        <router-link class="footerNav" to="/friend" tag='div'>
+          <i class="icon-group"></i>
+          <span>人脉</span>
+        </router-link>
         <router-link class="footerNav" to="/user" tag='div'>
           <i class="icon-user homeColor"></i>
           <span>我</span>

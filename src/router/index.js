@@ -5,6 +5,7 @@ const Home = r => require.ensure([], () => r(require('../page/Home')))
 const User = r => require.ensure([], () => r(require('../page/User')))
 const About = r => require.ensure([], () => r(require('../page/About')))
 const Other = r => require.ensure([], () => r(require('../page/Other')))
+const Friend = r => require.ensure([], () => r(require('../page/friend')))
 const Router1 = r => require.ensure([], () => r(require('../page/router1')))
 const Router2 = r => require.ensure([], () => r(require('../page/router2')))
 const childRouter = r => require.ensure([], () => r(require('../components/router')))
@@ -24,6 +25,7 @@ const routes = [{
       ]
     },
     { path: "/user", component: User },
+    { path: "/friend", component: Friend },
     { path: "/about", component: About },
     { path: "/other", component: Other }
   ]
